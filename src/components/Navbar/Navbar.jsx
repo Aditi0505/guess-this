@@ -5,7 +5,6 @@ import { Button } from "../Button/Button";
 const Navbar = () => {
   const location = useLocation();
   const { themeState, themeDispatch } = useTheme();
-  console.log("theme", themeState.theme);
   return (
     <div>
       <header className="desktop-navigation position-fixed">

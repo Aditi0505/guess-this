@@ -1,5 +1,4 @@
 const themeReducer = (state, action) => {
-  console.log(state);
   switch (action.type) {
     case "DARK":
       return { ...state, theme: "light" };
