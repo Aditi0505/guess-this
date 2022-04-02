@@ -25,7 +25,7 @@ const Navbar = () => {
             <Button buttonState={"Logout"} route="" />
           )}
           <li>
-            <i class="fas fa-toggle-off nav-icon" id="toggle"></i>
+            <i className="fas fa-toggle-off nav-icon" id="toggle"></i>
           </li>
         </ul>
       </header>
