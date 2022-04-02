@@ -1,12 +1,16 @@
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useEffect, useReducer } from "react";
 import { themeReducer } from "../reducer";
 
 const ThemeContext = createContext(null);
 
 const ThemeProvider = ({ children }) => {
   const [themeState, themeDispatch] = useReducer(themeReducer, {
-    theme: "light",
+    theme: localStorage.getItem("theme"),
   });
+  useEffect(
+    () => localStorage.setItem("theme", themeState.theme),
+    [themeState.theme]
+  );
 
   return (
     <ThemeContext.Provider value={{ themeState, themeDispatch }}>

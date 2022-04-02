@@ -5,7 +5,6 @@ import { Route, Routes } from "react-router-dom";
 import { useTheme } from "./context";
 const App = () => {
   const { themeState } = useTheme();
-  console.log("app theme", themeState.theme);
   return (
     <div className={themeState.theme === "light" ? "light-mode" : "dark-mode"}>
       <Navbar />
