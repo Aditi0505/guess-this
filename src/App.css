@@ -29,3 +29,15 @@
   background-color: var(--primary-color);
   color: var(--accent1);
 }
+
+@media screen and (max-width: 52em) {
+  html {
+    font-size: 40%;
+  }
+
+  .small-screen {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  }
+}
