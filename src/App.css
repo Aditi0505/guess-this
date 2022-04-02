@@ -1,11 +1,31 @@
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:root {
+  /* colors */
+  --primary-color: #fefefe;
+  --secondary-color: #525252;
+  --cta: #c42625;
+  --accent1: #1E1E1E;
+  --accent2: #c5c5c5;
+  --disable: #fceeee;
+  --hover: #d62929;
 }
- */
+
+ .light-mode {
+  --primary-color: #fefefe;
+  --secondary-color: #525252;
+  --cta: #c42625;
+  --accent1: #1E1E1E;
+  --accent2: #c5c5c5;
+  --disable: #fceeee;
+  --hover: #d62929;
+}
+.dark-mode {
+  --primary-color: #1E1E1E;
+  --secondary-color: #c5c5c5;
+  --cta: #c42625;
+  --accent1: #fefefe;
+  --accent2: #525252;
+  --disable: #fceeee;
+  --hover: #d62929;
+  background-color: var(--primary-color);
+  color: var(--accent1);
+}
