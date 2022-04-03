@@ -1,0 +1,15 @@
+.quiz-container{
+    color: var(--accent-blue);
+    height: calc(100vh - 40rem);
+}
+.category-container{
+    width:100%;
+    flex-wrap:wrap;
+    padding: var(--md-size);
+    background-color: var(--primary-color);
+    color: var(--accent-1);
+    gap:2rem;
+}   
+.box{
+    height: 100vh;
+}

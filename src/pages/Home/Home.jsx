@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="home-container flex-center">
-      <div className="grid-container-col flex-spbt">
+      <div className="grid-container-col flex-spbt small-screen">
         <div className="column">
           <div className="grid-container flex-spbt">
             <div className="row">
@@ -19,17 +19,22 @@ const Home = () => {
             <div className="row">
               <p className="text-md text-center">
                 Click Here to
-                <Link to="/quiz-category">
-                  <button className="btn btn-link text-md text-center">
-                    Play
-                  </button>
+                <Link
+                  to="/quiz-category"
+                  className="btn btn-link text-md text-center"
+                >
+                  Play
                 </Link>
               </p>
             </div>
           </div>
         </div>
         <div className="column">
-          <img src="/assets/images/landing-page.svg" alt="landingPage quiz" />
+          <img
+            src="/assets/images/landing-page.svg"
+            alt="landingPage quiz"
+            className="landing-img responsive"
+          />
         </div>
       </div>
     </div>
