@@ -3,28 +3,28 @@ import { Link } from "react-router-dom";
 const Card = ({ title, image }) => {
   return (
     <section>
-      <div class="card">
-        <div class="card-inner-container">
-          <div class="card-image-overlay">
+      <div className="card">
+        <div className="card-inner-container">
+          <div className="card-image-overlay">
             <Link to="/rules">
-              <img src={image} alt={`${title} card`} class="img" />
+              <img src={image} alt={`${title} card`} className="img" />
             </Link>
           </div>
-          <div class="card-body">
-            <div class="card-title padding-xs text-left">
+          <div className="card-body">
+            <div className="card-title padding-xs text-left">
               <p>See if you can answer these fun questions?</p>
             </div>
-            <div class="card-desc padding-xs text-left">
-              <p class="full-width">Take this quiz to test yourself</p>
-              <p class="text-xs">10 questions</p>
+            <div className="card-desc padding-xs text-left">
+              <p className="full-width">Take this quiz to test yourself</p>
+              <p className="text-xs">10 questions</p>
             </div>
           </div>
         </div>
-        <div class="icons">
+        <div className="icons">
           <Link to="/rules">
-            <i class="fa fa-arrow-right btn btn-icon"></i>
+            <i className="fa fa-arrow-right btn btn-icon"></i>
           </Link>
-          <span class="card-badge-text">
+          <span className="card-badge-text">
             {title.includes("Entertainment") ? title.substring(15) : title}
           </span>
         </div>
