@@ -2,17 +2,17 @@ import { Card } from "../../components";
 import { categories } from "../../data/categories";
 const QuizCategory = () => {
   return (
-    <div class="box">
-      <div class="quiz-container flex-center">
-        <div class="grid-container flex-spbt">
-          <div class="row">
+    <div className="box">
+      <div className="quiz-container flex-center">
+        <div className="grid-container flex-spbt">
+          <div className="row">
             <h1>Let's Play</h1>
           </div>
         </div>
       </div>
-      <div class="category-container flex-spbt">
-        {categories.map((category) => (
-          <Card title={category.title} image={category.image} />
+      <div className="category-container flex-spbt">
+        {categories.map((category, index) => (
+          <Card title={category.title} image={category.image} key={index + 1} />
         ))}
       </div>
     </div>

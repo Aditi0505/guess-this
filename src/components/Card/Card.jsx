@@ -6,7 +6,7 @@ const Card = ({ title, image }) => {
       <div class="card">
         <div class="card-inner-container">
           <div class="card-image-overlay">
-            <Link to="/play">
+            <Link to="/rules">
               <img src={image} alt={`${title} card`} class="img" />
             </Link>
           </div>
@@ -21,7 +21,7 @@ const Card = ({ title, image }) => {
           </div>
         </div>
         <div class="icons">
-          <Link to="/play">
+          <Link to="/rules">
             <i class="fa fa-arrow-right btn btn-icon"></i>
           </Link>
           <span class="card-badge-text">
