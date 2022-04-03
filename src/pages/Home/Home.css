@@ -1,0 +1,13 @@
+#toggle{
+    font-size: var(--md-size);
+    cursor: pointer;
+  }
+  
+  .home-container{
+  height:100vh;
+  }
+  
+  .column,
+  .row{
+    background-color: transparent;
+  }
