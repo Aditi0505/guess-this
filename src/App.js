@@ -1,5 +1,5 @@
 import "./App.css";
-import { Home, QuizCategory, RulesPage } from "./pages";
+import { Home, Quiz, QuizCategory, RulesPage } from "./pages";
 import { Navbar } from "./components";
 import { Route, Routes } from "react-router-dom";
 import { useTheme } from "./context";
@@ -12,6 +12,7 @@ const App = () => {
         <Route path="/" exact element={<Home />} />
         <Route path="/quiz-category" element={<QuizCategory />} />
         <Route path="/rules" element={<RulesPage />} />
+        <Route path="/play" element={<Quiz />} />
       </Routes>
     </div>
   );
