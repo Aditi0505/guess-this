@@ -7,13 +7,13 @@ export const fetchQuestionsByCategory = async (
   questionDispatch
 ) => {
   try {
-    const response = await axios.get(
+    const { data } = await axios.get(
       `https://opentdb.com/api.php?amount=10&category=${categoryNumber}&difficulty=${difficulty}&type=multiple`
     );
     navigate("/rules");
     questionDispatch({
       type: "ADDED_QUESTIONS",
-      payload: response.data.results,
+      payload: data.results,
     });
   } catch (error) {
     console.log("error", error);
