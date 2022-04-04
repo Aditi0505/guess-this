@@ -46,13 +46,13 @@ export const categories = [
     title: "Geography",
     image: "/assets/images/geo-category.svg",
     difficulty: "hard",
-    categoryNumber: 11,
+    categoryNumber: 22,
   },
   {
     id: 8,
     title: "Entertainment: Books",
     image: "/assets/images/book-category.svg",
     difficulty: "medium",
-    categoryNumber: 11,
+    categoryNumber: 10,
   },
 ];
