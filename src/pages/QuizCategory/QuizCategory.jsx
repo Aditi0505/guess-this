@@ -4,6 +4,7 @@ import { setTitle } from "../../utils";
 const QuizCategory = () => {
   const title = "Guess This | Quiz Category";
   setTitle(title);
+
   return (
     <div className="box">
       <div className="quiz-container flex-center">
@@ -19,6 +20,8 @@ const QuizCategory = () => {
             title={category.title}
             image={category.image}
             key={category.id}
+            difficulty={category.difficulty}
+            categoryNumber={category.categoryNumber}
           />
         ))}
       </div>

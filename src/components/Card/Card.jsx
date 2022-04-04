@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom";
-
-const Card = ({ title, image }) => {
+import { Link, useNavigate } from "react-router-dom";
+import { useQuestion } from "../../context";
+import { fetchQuestionsByCategory } from "../../services";
+const Card = ({ title, image, difficulty, categoryNumber }) => {
+  const { questionDispatch } = useQuestion();
+  const navigate = useNavigate();
   return (
     <section>
       <div className="card">
@@ -21,9 +24,17 @@ const Card = ({ title, image }) => {
           </div>
         </div>
         <div className="icons">
-          <Link to="/rules">
-            <i className="fa fa-arrow-right btn btn-icon"></i>
-          </Link>
+          <i
+            className="fa fa-arrow-right btn btn-icon"
+            onClick={() =>
+              fetchQuestionsByCategory(
+                categoryNumber,
+                difficulty,
+                navigate,
+                questionDispatch
+              )
+            }
+          ></i>
           <span className="card-badge-text">
             {title.includes("Entertainment") ? title.substring(15) : title}
           </span>
