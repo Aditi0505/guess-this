@@ -3,7 +3,7 @@ export const fetchNextQuestion = (
   currentQuestionDispatch,
   navigate
 ) => {
-  if (currentQuestionState.currentQuestion > 8) {
+  if (currentQuestionState.currentQuestion === 9) {
     navigate("/result");
   } else if (currentQuestionState.selectedOption) {
     currentQuestionDispatch({
@@ -11,6 +11,6 @@ export const fetchNextQuestion = (
       payload: "",
     });
   } else {
-    console.log("PPlease select option first");
+    console.log("Please select option first");
   }
 };
