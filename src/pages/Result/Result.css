@@ -1,6 +1,7 @@
-.res-contain{
+.result-container{
     height:100%;
     background-color: var(--primary-color);
+    width:100%;
 }
 .heading{
     margin-top:10rem;

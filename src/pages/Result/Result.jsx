@@ -5,7 +5,7 @@ import { useCurrentQuestion } from "../../context";
 const Result = () => {
   const { currentQuestionState } = useCurrentQuestion();
   return (
-    <main className="padding-sm full-width flex-center res-contain">
+    <main className="padding-sm full-width flex-center result-container">
       <div className="heading flex-column">
         <h1 className="text-center heading-accent padding-sm">
           Final Result : {currentQuestionState.score} /100
