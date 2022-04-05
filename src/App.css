@@ -16,6 +16,7 @@
   --accent1: #1E1E1E;
   --accent2: #c5c5c5;
   --disable: #fceeee;
+  --option : #1E1E1E;
   --hover: #d62929;
 }
 .dark-mode {
@@ -26,6 +27,7 @@
   --accent2: #525252;
   --disable: #fceeee;
   --hover: #d62929;
+  --option : #1E1E1E;
   background-color: var(--primary-color);
   color: var(--accent1);
 }

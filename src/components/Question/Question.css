@@ -1,0 +1,25 @@
+.question-container{
+width:50%
+}
+.correct{
+    background-color: var(--accent-green);
+}
+
+.incorrect{
+    background-color: var(--accent-red);
+}
+.buttonOption{
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font: var(--bold) var(--sm-size) var(--body-font);
+    cursor: pointer;
+    color: var(--option);
+    border-color: 1px solid var(--secondary-color);
+}
+.btn-next:hover{
+background-color: var(--accent-green)
+}
+.btn-quit:hover{
+    background-color: var(--accent-red)
+}
