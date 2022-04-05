@@ -10,7 +10,19 @@ const Card = ({ title, image, difficulty, categoryNumber }) => {
         <div className="card-inner-container">
           <div className="card-image-overlay">
             <Link to="/rules">
-              <img src={image} alt={`${title} card`} className="img" />
+              <img
+                src={image}
+                alt={`${title} card`}
+                className="img"
+                onClick={() =>
+                  fetchQuestionsByCategory(
+                    categoryNumber,
+                    difficulty,
+                    navigate,
+                    questionDispatch
+                  )
+                }
+              />
             </Link>
           </div>
           <div className="card-body">
