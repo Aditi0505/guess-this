@@ -1,0 +1,12 @@
+.res-contain{
+    height:100%;
+    background-color: var(--primary-color);
+}
+.heading{
+    margin-top:10rem;
+    height:100%;
+    background-color: var(--primary-color);
+}
+.btn-align{
+    align-self: flex-end;
+}
