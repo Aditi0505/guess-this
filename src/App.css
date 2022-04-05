@@ -31,6 +31,10 @@
   background-color: var(--primary-color);
   color: var(--accent1);
 }
+.heading-accent{
+  color: var(--accent-blue);
+
+}
 
 @media screen and (max-width: 52em) {
   html {

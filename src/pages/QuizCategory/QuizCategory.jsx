@@ -10,7 +10,7 @@ const QuizCategory = () => {
       <div className="quiz-container flex-center">
         <div className="grid-container flex-spbt">
           <div className="row">
-            <h1>Let's Play</h1>
+            <h1 className="heading-accent">Let's Play</h1>
           </div>
         </div>
       </div>

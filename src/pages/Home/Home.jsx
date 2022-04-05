@@ -7,7 +7,7 @@ const Home = () => {
         <div className="column">
           <div className="grid-container flex-spbt">
             <div className="row">
-              <h1> Welcome to Guess This!</h1>
+              <h1 className="heading-accent"> Welcome to Guess This!</h1>
             </div>
             <div className="row desc">
               <p className="text-md text-center">

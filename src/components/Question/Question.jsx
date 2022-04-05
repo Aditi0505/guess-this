@@ -17,7 +17,7 @@ const Question = ({
   return (
     <main className="padding-sm grid-container flex-center question-wrapper">
       <section className="question-container">
-        <h1 className="text-center padding-sm">
+        <h1 className="text-center heading-accent padding-sm">
           {`Welcome to
           ${
             categoryname.includes("Entertainment")
