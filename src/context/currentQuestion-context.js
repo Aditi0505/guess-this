@@ -11,6 +11,7 @@ const CurrentQuestionProvider = ({ children }) => {
       score: 0,
       selectedOption: "",
       question: "",
+      results: [],
     }
   );
 

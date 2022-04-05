@@ -11,6 +11,15 @@ const currentQuestionReducer = (state, action) => {
           action.payload.selectedOption === action.payload.correctAnswer
             ? state.score + 10
             : state.score,
+        results: [
+          ...state.results,
+          {
+            currentQuestion: action.payload.currentQuestion,
+            questions: action.payload.question,
+            selectedOption: action.payload.selectedOption,
+            correctAnswer: action.payload.correctAnswer,
+          },
+        ],
       };
     case "NEXT_QUESTION":
       return {
