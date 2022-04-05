@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { ResultCard } from "../../components/Card/ResultCard";
 import { useCurrentQuestion } from "../../context";
+import { setTitle } from "../../utils";
 
 const Result = () => {
   const { currentQuestionState } = useCurrentQuestion();
+  setTitle("Guess This | Result");
   return (
     <main className="padding-sm full-width flex-center result-container">
       <div className="heading flex-column">
