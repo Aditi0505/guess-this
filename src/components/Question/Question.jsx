@@ -60,7 +60,7 @@ const Question = ({
                 }
                 disabled={currentQuestionState.selectedOption}
               >
-                {option}
+                {decode(option)}
               </button>
             ))}
         </div>
