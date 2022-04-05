@@ -1,5 +1,5 @@
 import { colorHandler } from "../../utils";
-
+import { decode } from "html-entities";
 const ResultCard = ({ result }) => {
   const options = result.questions["incorrect_answers"].concat(
     result.correctAnswer
@@ -9,7 +9,7 @@ const ResultCard = ({ result }) => {
     <div className="question padding-sm">
       <div className="flex-spbt padding-sm">
         <p className="text-left text-sm ft-bold">
-          {result.questions["question"]}
+          {decode(result.questions["question"])}
         </p>
       </div>
       <div className="flex-column padding-sm">
@@ -22,7 +22,7 @@ const ResultCard = ({ result }) => {
               }`}
               disabled={result.selectedOption}
             >
-              {option}
+              {decode(option)}
             </button>
           ))}
       </div>
