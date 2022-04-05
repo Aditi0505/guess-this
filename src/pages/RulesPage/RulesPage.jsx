@@ -10,7 +10,7 @@ const RulesPage = () => {
       <div className="grid-container-col flex-spbt small-screen">
         <div className="column">
           <div className="grid-container flex-spbt">
-            <h1 className="rule">Rules To Play:</h1>
+            <h1 className="heading-accent">Rules To Play:</h1>
             <div className="row desc">
               <ul className="text-sm text-left">
                 {rules.map((rule) => (
