@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useCurrentQuestion } from "../../context";
 import { colorHandler, fetchNextQuestion } from "../../utils";
-
+import { decode } from "html-entities";
 const Question = ({
   categoryname,
   currentQuestion,
@@ -35,7 +35,7 @@ const Question = ({
         </div>
         <div className="flex-spbt padding-sm">
           <div className="text-left">
-            {questionBank[currentQuestion].question}
+            {decode(questionBank[currentQuestion].question)}
           </div>
         </div>
         <div className="flex-column padding-sm">
@@ -60,7 +60,7 @@ const Question = ({
                 }
                 disabled={currentQuestionState.selectedOption}
               >
-                {option}
+                {decode(option)}
               </button>
             ))}
         </div>

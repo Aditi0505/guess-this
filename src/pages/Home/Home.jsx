@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { setTitle } from "../../utils";
 
 const Home = () => {
+  setTitle("Guess This | Home");
   return (
     <div className="home-container flex-center">
       <div className="grid-container-col flex-spbt small-screen">

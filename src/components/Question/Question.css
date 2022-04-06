@@ -1,10 +1,9 @@
 .question-container{
-width:50%
+width:80%
 }
 .correct{
     background-color: var(--accent-green);
 }
-
 .incorrect{
     background-color: var(--accent-red);
 }
@@ -18,8 +17,11 @@ width:50%
     border-color: 1px solid var(--secondary-color);
 }
 .btn-next:hover{
-background-color: var(--accent-green)
+    background-color: var(--accent-green)
 }
 .btn-quit:hover{
     background-color: var(--accent-red)
+}
+.quiz-heading{
+   height: 13rem;
 }
