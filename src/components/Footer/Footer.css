@@ -1,0 +1,9 @@
+.footer {
+    background-color: var(--secondary-color);
+    position: fixed;
+    bottom: 0;
+    height: 5vh;
+  }
+  .full-width {
+    width: 100%;
+  }
