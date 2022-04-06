@@ -4,7 +4,6 @@ const ResultCard = ({ result }) => {
   const options = result.questions["incorrect_answers"].concat(
     result.correctAnswer
   );
-
   return (
     <div className="question padding-sm">
       <div className="flex-spbt padding-sm">
