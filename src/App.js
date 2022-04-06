@@ -1,6 +1,14 @@
 import "./App.css";
-import { Home, Quiz, QuizCategory, Result, RulesPage } from "./pages";
-import { Navbar } from "./components";
+import {
+  Home,
+  Login,
+  Quiz,
+  QuizCategory,
+  Result,
+  RulesPage,
+  Signup,
+} from "./pages";
+import { Footer, Navbar } from "./components";
 import { Route, Routes } from "react-router-dom";
 import { useTheme } from "./context";
 const App = () => {
@@ -14,7 +22,10 @@ const App = () => {
         <Route path="/rules" element={<RulesPage />} />
         <Route path="/play" element={<Quiz />} />
         <Route path="/result" element={<Result />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

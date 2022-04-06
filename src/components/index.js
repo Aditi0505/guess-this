@@ -1,3 +1,6 @@
+export { FooterLink } from "./Footer/FooterLink";
+export { Footer } from "./Footer/Footer";
+export { Input } from "./Input/Input";
 export { Radiobutton } from "./Radiobutton/Radiobutton";
 export { Filter } from "./Filter/Filter";
 export { Tab } from "./Tabs/Tab";
