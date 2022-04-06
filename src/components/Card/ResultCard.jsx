@@ -13,18 +13,17 @@ const ResultCard = ({ result }) => {
         </p>
       </div>
       <div className="flex-column padding-sm">
-        {options &&
-          options.map((option) => (
-            <button
-              key={option}
-              className={`buttonOption ${
-                result.selectedOption && colorHandler(result, option)
-              }`}
-              disabled={result.selectedOption}
-            >
-              {option}
-            </button>
-          ))}
+        {options?.map((option) => (
+          <button
+            key={option}
+            className={`buttonOption ${
+              result.selectedOption && colorHandler(result, option)
+            }`}
+            disabled={result.selectedOption}
+          >
+            {option}
+          </button>
+        ))}
       </div>
     </div>
   );
