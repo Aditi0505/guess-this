@@ -1,0 +1,7 @@
+.label-content{
+    color: var(--accent-blue);
+    background-color: var(--accent-light-blue);
+}
+.radiobtn{
+    width:20rem;
+}

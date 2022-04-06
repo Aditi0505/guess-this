@@ -1,0 +1,20 @@
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  .tab{
+    flex-grow: 1;
+    padding: 15px;
+    text-align: center;
+    border-radius: 0;
+    font-size: var(--regular) var(--md-size) var(--body-font);
+    width:15rem;
+  }
+
+.select{
+border-bottom: 4px solid var(--accent-blue-hover);
+color:var(--accent-blue);
+}
+  

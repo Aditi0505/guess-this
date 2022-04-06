@@ -3,3 +3,5 @@
 @import url("../src/pages/Quiz/Quiz.css");
 @import url("../src/components/Question/Question.css");
 @import url("../src/pages/Result/Result.css");
+@import url("../src/components/Tabs/Tab.css");
+@import url("../src/components/Radiobutton/Radiobutton.css");
