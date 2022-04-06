@@ -1,28 +1,19 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useQuestion } from "../../context";
 import { fetchQuestionsByCategory } from "../../services";
 const Card = ({ title, image, difficulty, categoryNumber }) => {
   const { questionDispatch } = useQuestion();
-  const navigate = useNavigate();
+  useEffect(() => {
+    fetchQuestionsByCategory(categoryNumber, difficulty, questionDispatch);
+  }, [categoryNumber, difficulty, questionDispatch]);
   return (
     <section>
       <div className="card">
         <div className="card-inner-container">
           <div className="card-image-overlay">
             <Link to="/rules">
-              <img
-                src={image}
-                alt={`${title} card`}
-                className="img"
-                onClick={() =>
-                  fetchQuestionsByCategory(
-                    categoryNumber,
-                    difficulty,
-                    navigate,
-                    questionDispatch
-                  )
-                }
-              />
+              <img src={image} alt={`${title} card`} className="img" />
             </Link>
           </div>
           <div className="card-body">
@@ -36,17 +27,10 @@ const Card = ({ title, image, difficulty, categoryNumber }) => {
           </div>
         </div>
         <div className="icons">
-          <i
-            className="fa fa-arrow-right btn btn-icon"
-            onClick={() =>
-              fetchQuestionsByCategory(
-                categoryNumber,
-                difficulty,
-                navigate,
-                questionDispatch
-              )
-            }
-          ></i>
+          <Link to="/rules">
+            <i className="fa fa-arrow-right btn btn-icon"></i>
+          </Link>
+
           <span className="card-badge-text">
             {title.includes("Entertainment") ? title.substring(15) : title}
           </span>

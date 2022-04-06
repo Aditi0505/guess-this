@@ -1,5 +1,5 @@
 .quiz-container{
-    height: calc(100vh - 40rem);
+    height: calc(100vh - 20rem);
 }
 .category-container{
     width:100%;
@@ -11,4 +11,12 @@
 }   
 .box{
     height: 100vh;
+}
+.category-heading{
+    margin-top:10rem;
+}
+.filter-wrapper{
+    flex-wrap: wrap;
+    width:55%;
+    border: 1px solid var(--accent-orange);
 }
