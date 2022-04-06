@@ -1,16 +1,25 @@
-const currentQuestionReducer = (state, action) => {
-  switch (action.type) {
+const currentQuestionReducer = (state, { type, payload }) => {
+  switch (type) {
     case "CURRENT":
       return {
         ...state,
-        currentQuestion: action.payload.currentQuestion,
-        question: action.payload.question,
-        selectedOption: action.payload.selectedOption,
-        correctAnswer: action.payload.correctAnswer,
+        currentQuestion: payload.currentQuestion,
+        question: payload.question,
+        selectedOption: payload.selectedOption,
+        correctAnswer: payload.correctAnswer,
         score:
-          action.payload.selectedOption === action.payload.correctAnswer
+          payload.selectedOption === payload.correctAnswer
             ? state.score + 10
             : state.score,
+        results: [
+          ...state.results,
+          {
+            currentQuestion: payload.currentQuestion,
+            questions: payload.question,
+            selectedOption: payload.selectedOption,
+            correctAnswer: payload.correctAnswer,
+          },
+        ],
       };
     case "NEXT_QUESTION":
       return {

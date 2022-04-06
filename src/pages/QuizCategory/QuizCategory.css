@@ -1,5 +1,4 @@
 .quiz-container{
-    color: var(--accent-blue);
     height: calc(100vh - 40rem);
 }
 .category-container{
