@@ -1,3 +1,4 @@
+export { useFilter, FilterProvider } from "./filter-context";
 export {
   useCurrentQuestion,
   CurrentQuestionProvider,

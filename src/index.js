@@ -5,6 +5,7 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import {
   CurrentQuestionProvider,
+  FilterProvider,
   QuestionProvider,
   ThemeProvider,
 } from "./context";
@@ -12,13 +13,15 @@ import {
 ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
-      <CurrentQuestionProvider>
-        <QuestionProvider>
-          <ThemeProvider>
-            <App />
-          </ThemeProvider>
-        </QuestionProvider>
-      </CurrentQuestionProvider>
+      <FilterProvider>
+        <CurrentQuestionProvider>
+          <QuestionProvider>
+            <ThemeProvider>
+              <App />
+            </ThemeProvider>
+          </QuestionProvider>
+        </CurrentQuestionProvider>
+      </FilterProvider>
     </React.StrictMode>
   </BrowserRouter>,
   document.getElementById("root")

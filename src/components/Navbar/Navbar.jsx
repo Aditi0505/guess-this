@@ -1,10 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
-import { useTheme } from "../../context";
+import { useFilter, useTheme } from "../../context";
 import { Button } from "../Button/Button";
 
 const Navbar = () => {
   const location = useLocation();
   const { themeState, themeDispatch } = useTheme();
+  const { filterState, filterDispatch } = useFilter();
   return (
     <div>
       <header className="desktop-navigation position-fixed">
@@ -22,13 +23,13 @@ const Navbar = () => {
             name="search"
             id="search"
             placeholder="🔍 Search"
-            // onChange={(e) =>
-            //   filterDispatch({
-            //     type: "FILTER_BY_SEARCH",
-            //     payload: e.target.value,
-            //   })
-            // }
-            // value={filterState.searchKeyword}
+            onChange={(e) =>
+              filterDispatch({
+                type: "FILTER_BY_SEARCH",
+                payload: e.target.value,
+              })
+            }
+            value={filterState.searchKeyword}
           />
         ) : (
           ""
