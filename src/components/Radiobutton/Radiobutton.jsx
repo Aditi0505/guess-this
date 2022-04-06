@@ -1,7 +1,6 @@
 import { useFilter } from "../../context";
 const Radiobutton = ({ value, name, type, payload }) => {
   const { filterState, filterDispatch } = useFilter();
-  console.log(payload, filterState.sortBy);
   return (
     <div className="radiobtn">
       <input
