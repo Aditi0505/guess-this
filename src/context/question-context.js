@@ -7,7 +7,6 @@ const QuestionProvider = ({ children }) => {
   const [questionState, questionDispatch] = useReducer(questionReducer, {
     questions: [],
   });
-
   return (
     <QuestionContext.Provider value={{ questionState, questionDispatch }}>
       {children}
