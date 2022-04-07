@@ -24,7 +24,7 @@
 #### Quizzes by Category
 
 - User can play multiple quizzes by category.
-- Cliking on a category card or button gets the User redirected to the rules page with the selected category.
+- Clicking on a category card or button gets the User redirected to the rules page with the selected category.
 
 #### Rules Page
 
