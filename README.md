@@ -55,6 +55,11 @@
 
 - User can quit a quiz while playing it.
 
+#### Responsive
+- The app is fully responsive.
+
+#### Persisting Dark / Light Mode
+- It supports persisitng light and dark theme.
 ---
 
 ### Features to be implemented soon
