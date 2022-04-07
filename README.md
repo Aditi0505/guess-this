@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# ![logo](/public/favicon.ico) Guess This
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Visit Site](https://guessthisquiz.netlify.app/)
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+> **Guess This** is a fun Quiz App based on the component library Redazzle. It lets you pick different categories to answer some engaging questions.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Implemented using
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React JS
+- [Redazzle](https://theredclosetapp.netlify.app/)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Features
 
-### `npm run build`
+#### Home
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Contains landing page with the featured categories.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Quizzes by Category
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- User can play multiple quizzes by category.
+- Cliking on a category card or button gets the User redirected to the rules page with the selected category.
 
-### `npm run eject`
+#### Rules Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Contains rules for the particular quiz user is playing.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### MCQ based Quiz Question Page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Once User starts playing a quiz, user can see a question with multiple options to pick from.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Result Page with Answers & Score
 
-## Learn More
+- Once User completes the quiz, user can see the result page containing scores and answers.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Filters, Sort, Clear
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Following Filters can be applied on categories:
+  - By Difficulty Level
+- User can sort quiz based on
+  - Alphabetically ascending order
+  - Alphabetically descending order
+- Contains _clear_ button from where User can clear all the applied filters.
 
-### Code Splitting
+#### Search Quiz
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- User can search for a quiz category from the list via the input textbox on the header navbar.
 
-### Analyzing the Bundle Size
+#### Quit Quiz
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- User can quit a quiz while playing it.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Features to be implemented soon
 
-### Advanced Configuration
+- Authentication
+- Quiz Board
+- Timer for quiz question
+- User Profile
+- Loaders, Alerts
+- 404 Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## How to run your app locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+> Clone the repository on your local machine with the command below in your terminal, and cd into the _guess-this_ folder
 
-### `npm run build` fails to minify
+Clone the project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+  git clone https://github.com/Aditi0505/guess-this.git
+```
+
+### Running the app
+
+```
+cd guess-this
+npm start
+```
+
+---
+
+## Contributing to The Red Closet App
+
+The person who build this (Me!) would highly appreciate if you are willing to add to or improve this project.
+
+### Raise an issue
+
+> If you have suggestions as to how this project could be improved, or you want to report a bug, open an issue!
+
+### How to contribute
+
+- Fork the project repository
+- Clone your fork
+- Create a new branch with a proper feature name in your local repo
+- Make chages, commit and push
+- Raise a Pull Request
+
+---
+
+## Connect with me!
+
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/aadyaaditi)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aditi-35bba3149/)
