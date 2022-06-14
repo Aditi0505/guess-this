@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 export const fetchNextQuestion = (
   currentQuestionState,
   currentQuestionDispatch,
@@ -11,6 +13,6 @@ export const fetchNextQuestion = (
       payload: "",
     });
   } else {
-    console.log("Please select option first");
+    toast.error("Please select option first");
   }
 };

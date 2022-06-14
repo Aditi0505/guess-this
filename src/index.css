@@ -7,3 +7,5 @@
 @import url("../src/components/Radiobutton/Radiobutton.css");
 @import url("../src/components/Input/Input.css");
 @import url("../src/components/Footer/Footer.css");
+@import url("../src/pages/Auth/Auth.css");
+@import url("../src/components/Toast/Toast.css");

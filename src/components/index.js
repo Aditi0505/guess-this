@@ -1,3 +1,4 @@
+export { Toast } from "../components/Toast/Toast";
 export { FooterLink } from "./Footer/FooterLink";
 export { Footer } from "./Footer/Footer";
 export { Input } from "./Input/Input";
