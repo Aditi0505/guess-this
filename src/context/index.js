@@ -1,3 +1,4 @@
+export { useAuth, AuthProvider } from "./auth-context";
 export { useFilter, FilterProvider } from "./filter-context";
 export {
   useCurrentQuestion,

@@ -1,14 +1,15 @@
 import { useNavigate } from "react-router-dom";
-import { useQuestion } from "../../context";
+import { useAuth, useQuestion } from "../../context";
 import { fetchQuestionsByCategory } from "../../services";
 const Card = ({ title, image, difficulty, categoryNumber }) => {
   const { questionDispatch } = useQuestion();
   const navigate = useNavigate();
+  const { authState } = useAuth();
   return (
     <section>
       <div className="card">
         <div className="card-inner-container">
-          <div className="card-image-overlay">
+          <div className="card-image-overlay btn">
             <img
               src={image}
               alt={`${title} card`}
@@ -18,7 +19,8 @@ const Card = ({ title, image, difficulty, categoryNumber }) => {
                   categoryNumber,
                   difficulty,
                   navigate,
-                  questionDispatch
+                  questionDispatch,
+                  authState
                 )
               }
             />
@@ -41,7 +43,8 @@ const Card = ({ title, image, difficulty, categoryNumber }) => {
                 categoryNumber,
                 difficulty,
                 navigate,
-                questionDispatch
+                questionDispatch,
+                authState
               )
             }
           ></i>
