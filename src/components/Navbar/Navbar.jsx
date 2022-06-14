@@ -1,11 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
-import { useFilter, useTheme } from "../../context";
+import { useAuth, useFilter, useTheme } from "../../context";
 import { Button } from "../Button/Button";
 
 const Navbar = () => {
   const location = useLocation();
   const { themeState, themeDispatch } = useTheme();
   const { filterState, filterDispatch } = useFilter();
+  const { authState } = useAuth();
   return (
     <div>
       <header className="desktop-navigation position-fixed">
@@ -34,15 +35,18 @@ const Navbar = () => {
         ) : (
           ""
         )}
+
         <ul className="nav-icons">
-          {location.pathname === "/" ? (
+          {authState.encodedToken ? (
+            <Button buttonState={"Logout"} route="" />
+          ) : location.pathname === "/" ? (
             <Button buttonState={"Login"} route="login" />
           ) : location.pathname === "/login" ? (
             <Button buttonState={"Signup"} route="signup" />
           ) : location.pathname === "/signup" ? (
             <Button buttonState={"Login"} route="login" />
           ) : (
-            <Button buttonState={"Logout"} route="" />
+            <Button buttonState={"Login"} route="login" />
           )}
           {themeState.theme === "light" ? (
             <li>
