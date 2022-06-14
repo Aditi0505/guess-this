@@ -1,0 +1,9 @@
+.showPassword {
+  position: absolute;
+  right: 2rem;
+  top: 5.5rem;
+  cursor: pointer;
+}
+.passwordBox {
+  position: relative;
+}
