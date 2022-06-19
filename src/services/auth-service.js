@@ -14,7 +14,7 @@ export const loginHandler = async (
 ) => {
   try {
     if (email !== "" && password !== "") {
-      const authentication = getAuth();
+      const authentication = getAuth(app);
       const data = await signInWithEmailAndPassword(
         authentication,
         email,
@@ -45,7 +45,7 @@ export const signupHandler = async (
   location
 ) => {
   try {
-    const authentication = getAuth();
+    const authentication = getAuth(app);
     if (email !== "" && password !== "") {
       const data = await createUserWithEmailAndPassword(
         authentication,
