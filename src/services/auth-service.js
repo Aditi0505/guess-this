@@ -3,7 +3,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
-
+import { app } from "../firebase-config";
 export const loginHandler = async (
   email,
   password,
