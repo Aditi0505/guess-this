@@ -8,13 +8,14 @@ import {
   RulesPage,
   Signup,
 } from "./pages";
-import { Footer, Navbar } from "./components";
+import { Footer, Navbar, Toast } from "./components";
 import { Route, Routes } from "react-router-dom";
 import { useTheme } from "./context";
 const App = () => {
   const { themeState } = useTheme();
   return (
     <div className={themeState.theme === "light" ? "light-mode" : "dark-mode"}>
+      <Toast />
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
