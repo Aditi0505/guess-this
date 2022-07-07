@@ -24,6 +24,7 @@ const Navbar = () => {
             name="search"
             id="search"
             placeholder="🔍 Search"
+            className="border-none border-rd2"
             onChange={(e) =>
               filterDispatch({
                 type: "FILTER_BY_SEARCH",

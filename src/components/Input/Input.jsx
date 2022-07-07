@@ -3,7 +3,7 @@ const Input = ({ inputType, label, placeholder, value, inputHandler }) => {
     <>
       <label
         htmlFor={inputType}
-        className="required-content label-content ft-bolder"
+        className="required-content label-content auth-label ft-bolder"
       >
         {label}
       </label>

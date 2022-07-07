@@ -23,7 +23,7 @@ const Home = () => {
                 Click Here to
                 <Link
                   to="/quiz-category"
-                  className="btn btn-link text-md text-center"
+                  className="btn btn-link text-md text-center auth-label"
                 >
                   Play
                 </Link>
