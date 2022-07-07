@@ -6,7 +6,7 @@ export const fetchNextQuestion = (
   navigate
 ) => {
   if (currentQuestionState.currentQuestion === 9) {
-    navigate("/result");
+    navigate("/result", { replace: true });
   } else if (currentQuestionState.selectedOption) {
     currentQuestionDispatch({
       type: "NEXT_QUESTION",

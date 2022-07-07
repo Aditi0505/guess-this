@@ -8,6 +8,7 @@ const CurrentQuestionProvider = ({ children }) => {
     currentQuestionReducer,
     {
       currentQuestion: 0,
+      currentCategory: 0,
       score: 0,
       selectedOption: "",
       question: "",

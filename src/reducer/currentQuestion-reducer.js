@@ -30,6 +30,21 @@ const currentQuestionReducer = (state, { type, payload }) => {
         score: state.score,
         question: "",
       };
+    case "INITIALIZE_QUESTION":
+      return {
+        ...state,
+        currentQuestion: 0,
+        currentCategory: 0,
+        score: 0,
+        selectedOption: "",
+        question: "",
+        results: [],
+      };
+    case "CURRENT_CATEGORY":
+      return {
+        ...state,
+        currentCategory: payload.currentCategory,
+      };
     default:
       return state;
   }
