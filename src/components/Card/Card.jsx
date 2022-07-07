@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import { useAuth, useQuestion } from "../../context";
+import { useAuth, useCurrentQuestion, useQuestion } from "../../context";
 import { fetchQuestionsByCategory } from "../../services";
-const Card = ({ title, image, difficulty, categoryNumber }) => {
+const Card = ({ title, image, difficulty, categoryNumber, location }) => {
   const { questionDispatch } = useQuestion();
+  const { currentQuestionState, currentQuestionDispatch } =
+    useCurrentQuestion();
   const navigate = useNavigate();
   const { authState } = useAuth();
   return (
@@ -20,7 +22,10 @@ const Card = ({ title, image, difficulty, categoryNumber }) => {
                   difficulty,
                   navigate,
                   questionDispatch,
-                  authState
+                  authState,
+                  currentQuestionDispatch,
+                  currentQuestionState,
+                  location
                 )
               }
             />
@@ -44,7 +49,10 @@ const Card = ({ title, image, difficulty, categoryNumber }) => {
                 difficulty,
                 navigate,
                 questionDispatch,
-                authState
+                authState,
+                currentQuestionDispatch,
+                currentQuestionState,
+                location
               )
             }
           ></i>
