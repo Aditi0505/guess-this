@@ -1,22 +1,30 @@
 .form {
-    width: 35rem;
-  }
-  .form-container {
-    border: 1px solid var(--secondary-color);
-  }
-  
-  .input-width {
-    width: 30rem;
-  }
-  
-  .outer-wrapper {
-    flex-direction: column;
-    gap: var(--sm-size);
-    padding: var(--sm-size);
-  }
+  width: 35rem;
+}
+.form-container {
+  border: 1px solid var(--secondary-color);
+}
 
-  .screen {
-    flex-wrap: wrap;
-    gap: var(--sm-size);
-    margin: 10rem 0 5.2rem 0;
-  }
+.input-width {
+  width: 30rem;
+}
+
+.outer-wrapper {
+  flex-direction: column;
+  gap: var(--sm-size);
+  padding: var(--sm-size);
+  min-height: 100vh;
+}
+
+.screen {
+  flex-wrap: wrap;
+  gap: var(--sm-size);
+  margin: 10rem 0 5.2rem 0;
+}
+.auth-label {
+  background-color: initial;
+  color: inherit;
+}
+.underlined {
+  text-decoration: underline;
+}

@@ -1,7 +1,10 @@
-.label-content{
-    color: var(--accent-blue);
-    background-color: var(--accent-light-blue);
+.label-content {
+  color: var(--accent-blue);
+  background-color: var(--accent-light-blue);
+  border-radius: 2rem;
+  cursor: pointer;
 }
-.radiobtn{
-    width:20rem;
+
+.radio {
+  opacity: 0;
 }
