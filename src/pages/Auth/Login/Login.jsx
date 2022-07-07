@@ -89,18 +89,9 @@ const Login = () => {
                 ></i>
               </div>
             )}
-
             <button
               type="button"
-              className="btn btn-outline-primary margin-tb-sm"
-              onClick={guestLoginHandler}
-            >
-              Login- Guest Account
-            </button>
-
-            <button
-              type="button"
-              className="btn btn-primary margin-tb-sm"
+              className="btn auth-btn btn-primary margin-tb-sm"
               onClick={() => {
                 loginHandler(
                   userName,
@@ -114,8 +105,18 @@ const Login = () => {
             >
               Login To Your Account
             </button>
+            <button
+              type="button"
+              className="btn auth-btn btn-outline-primary margin-tb-sm"
+              onClick={guestLoginHandler}
+            >
+              Login- Guest Account
+            </button>
             <div>
-              <Link to="/signup" className="text text-sm ft-light">
+              <Link
+                to="/signup"
+                className="text text-sm ft-light auth-label underlined"
+              >
                 Create New Account
               </Link>
             </div>

@@ -55,6 +55,7 @@ const Question = ({
                       selectedOption: option,
                       correctAnswer: correctAnswer,
                       question: questionBank[currentQuestion],
+                      currentCategory: categoryname,
                     },
                   })
                 }

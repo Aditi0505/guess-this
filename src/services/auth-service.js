@@ -32,8 +32,13 @@ export const loginHandler = async (
     } else {
       toast.warn("Please enter correct details");
     }
-  } catch (e) {
-    toast.error("Cannot login right now");
+  } catch (error) {
+    if (error.code === "auth/wrong-password") {
+      toast.error("Please check the Password");
+    }
+    if (error.code === "auth/user-not-found") {
+      toast.error("Please check the Email");
+    }
   }
 };
 
@@ -42,7 +47,8 @@ export const signupHandler = async (
   password,
   authDispatch,
   navigate,
-  location
+  location,
+  toast
 ) => {
   try {
     const authentication = getAuth(app);
@@ -59,26 +65,13 @@ export const signupHandler = async (
       navigate(location.state?.from?.pathname || "/login", {
         replace: true,
       });
-      // toastDispatch({
-      //   type: "SHOW",
-      //   payload: "Signup Successful!",
-      // });
-      // data.errors &&
-      //   toastDispatch({
-      //     type: "SHOW",
-      //     payload: data.errors[0],
-      //   });
+      toast.success("User Signup Successful!");
     } else {
-      // toastDispatch({
-      //   type: "SHOW",
-      //   payload: "Please enter correct details.",
-      // });
+      toast.error("Please enter correct details.");
     }
   } catch (error) {
-    console.log(error);
-    // toastDispatch({
-    //   type: "SHOW",
-    //   payload: error,
-    // });
+    if (error.code === "auth/email-already-in-use") {
+      toast.error("Email Already in Use");
+    }
   }
 };

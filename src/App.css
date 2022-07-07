@@ -2,46 +2,65 @@
   --primary-color: #fefefe;
   --secondary-color: #525252;
   --cta: #c42625;
-  --accent1: #1E1E1E;
+  --accent1: #1e1e1e;
   --accent2: #c5c5c5;
   --disable: #fceeee;
   --hover: #d62929;
 }
 
- .light-mode {
+.light-mode {
   --primary-color: #fefefe;
   --secondary-color: #525252;
   --cta: #c42625;
-  --accent1: #1E1E1E;
+  --accent1: #1e1e1e;
   --accent2: #c5c5c5;
   --disable: #fceeee;
-  --option : #1E1E1E;
+  --option: #1e1e1e;
   --hover: #d62929;
 }
 .dark-mode {
-  --primary-color: #1E1E1E;
+  /* --primary-color: #1e1e1e; */
+  --primary-color: #1c1c27;
   --secondary-color: #c5c5c5;
   --cta: #c42625;
   --accent1: #fefefe;
   --accent2: #525252;
   --disable: #fceeee;
   --hover: #d62929;
-  --option : #1E1E1E;
+  --option: #1e1e1e;
   background-color: var(--primary-color);
   color: var(--accent1);
 }
-.heading-accent{
+.heading-accent {
   color: var(--accent-blue);
 }
-
+.border-none {
+  border: none;
+}
+.border-rd2 {
+  border-radius: 2rem;
+}
 @media screen and (max-width: 52em) {
   html {
     font-size: 40%;
   }
-
+  .category-container {
+    margin-bottom: 3rem;
+  }
   .small-screen {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .filter-wrapper {
+    height: 50vh;
+    flex-direction: column;
+  }
+  .rules {
+    margin-top: 15rem;
+  }
+  .landing-img {
+    height: 28rem;
+    width: 28rem;
   }
 }

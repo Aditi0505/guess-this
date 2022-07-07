@@ -7,3 +7,6 @@
 .passwordBox {
   position: relative;
 }
+.auth-btn {
+  width: 100%;
+}

@@ -5,14 +5,14 @@ const Filter = () => {
   const { filterDispatch } = useFilter();
   return (
     <>
-      <div className="row flex-spbt filter-wrapper">
+      <div className="row flex-center filter-wrapper">
         <span className="ft-bolder padding-sm">Difficulty Levels:</span>
         <Tab filter="Easy" type="FILTER_BY_DIFFICULTY" payload="easy" />
         <Tab filter="Medium" type="FILTER_BY_DIFFICULTY" payload="medium" />
         <Tab filter="Hard" type="FILTER_BY_DIFFICULTY" payload="hard" />
       </div>
-      <div className="row flex-spbt filter-wrapper">
-        <span className="ft-bolder padding-sm">Sort By:</span>
+      <div className="row flex-center filter-wrapper">
+        <div className="ft-bolder padding-sm">Sort By:</div>
         <Radiobutton
           value={`Ascending`}
           name="sortBy"
