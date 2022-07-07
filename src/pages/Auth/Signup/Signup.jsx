@@ -4,7 +4,7 @@ import { setTitle } from "../../../utils/set-title";
 import { useState } from "react";
 import { useAuth } from "../../../context";
 import { signupHandler } from "../../../services/auth-service";
-
+import { toast } from "react-toastify";
 const Signup = () => {
   const title = "Guess This | Signup";
   setTitle(title);
@@ -49,7 +49,14 @@ const Signup = () => {
     } else {
       const isValid = validateFields(userName, password, confirmPassword);
       if (isValid) {
-        signupHandler(userName, password, authDispatch, navigate, location);
+        signupHandler(
+          userName,
+          password,
+          authDispatch,
+          navigate,
+          location,
+          toast
+        );
       } else {
       }
     }
@@ -131,13 +138,13 @@ const Signup = () => {
               </div>
             )}
             <button
-              className="btn btn-primary margin-tb-sm"
+              className="btn auth-btn btn-primary margin-tb-sm"
               onClick={validateHandler}
             >
               Create New Account
             </button>
             <div>
-              <Link to="/login" className="text text-sm ft-light">
+              <Link to="/login" className="text text-sm ft-light auth-label underlined">
                 Already have an account
               </Link>
             </div>
